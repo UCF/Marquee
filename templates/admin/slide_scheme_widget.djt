@@ -1,0 +1,8 @@
+<div id="color-scheme">
+    <ul>
+        <li class="scheme" id="color-1">Gold on Black</li>
+        <li class="scheme" id="color-2">Black on White</li>
+        <li class="scheme" id="color-3">White on Black</li>
+    </ul>
+    <div class="clear"></div>
+</div>

@@ -1,0 +1,17 @@
+{%extends 'base.djt'%}
+
+{% block wrap %}
+<h1>{% block title %}UCF Marquee{% endblock %}</h1>
+<h2>Submission Confirmation</h2>
+
+<div class="two-col">
+	<div class="left">        
+	{% if save %}
+	<p>Thank you for your marquee request.</p>
+	<p>You will be contacted if we have any questions/concerns about your request.</p>
+	{% else %}
+	{% endif %}	
+	</div>
+</div>
+
+{% endblock wrap %}

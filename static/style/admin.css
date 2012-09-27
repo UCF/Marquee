@@ -1,0 +1,34 @@
+#header a,
+#header a:link, 
+#header a:visited { color:#FAD46A; }
+#header { padding:0 0 2px 0; color:white; background:black url('img/admin_gradient.png') repeat-x bottom left; }
+#header h1 {color:white; display:inline; }
+#user-tools { display:inline; }
+.dashboard #container { background:url('img/admin_bg.png') repeat-x top; }
+#branding { margin:8px 0; padding:0 10px; }
+#changelist table thead th:first-child {width:auto; }
+
+.two-col { position:relative; zoom:1; padding-right:160px; }
+.two-col .left { width:100%; }
+.two-col .right { width:150px; position:absolute; top:0; right:0; }
+.clear {clear:both; height:1px; font-size:1px; overflow:hidden; }
+
+#slide .right { border:1px solid #ccc; }
+#slide .vLargeTextField, 
+#slide .vXMLLargeTextField { width:98%; }
+#preview { padding:1em; }
+#preview h2 { margin:0; padding:0 0 .5em 0; }
+
+/******************************************************************************\
+    Slide Scheme Widget
+    - would/should normally add this in a separate file as form media
+      using the widget class, but widget isn't being released as it's
+      own piece, so it's all good
+\******************************************************************************/
+.color_bg {display:none; }
+.color_font {display:none; }
+.scheme {display:block; float:left; height:76px; width:108px; margin:3px; font-size:1.3em; padding:10px; border: 1px solid black;}
+.scheme:hover {cursor:pointer; opacity:.8;}
+#color-1 { background:#000; color: #EBB700; }
+#color-2 { background:#fff; color: #000; }
+#color-3 { background:#000; color: #fff; }

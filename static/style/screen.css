@@ -1,0 +1,85 @@
+/*  
+    Marquee Mark
+    UCF Web Communcations
+    Summer 2010
+*/
+
+
+/******************************************************************************\
+    General Styles
+\******************************************************************************/
+body { font: 80% "Trebuchet MS", sans-serif; text-align:left; }
+#wrap { margin:0; padding:0 0 0 50px; width:950px; margin:0 auto;  }
+
+h1,h2 { font-family:georgia, serif; }
+h1 { margin:.8em 0; }
+h1 span {font-size:10px; color:white; }
+h1 a {text-decoration:none; color:black; }
+h1 a:hover {color:black; }
+h2 { margin-top: 0em;}
+h3 { font-size:1.3em; }
+a { color:#990000; }
+a:hover { cursor:pointer; color:#C30202; }
+.hide {display:none; }
+table { width:auto; }
+th { vertical-align:top; text-align:right; padding-top:11px; }
+input { padding:3px; }
+textarea { width:100%; height:80px; margin:0; }
+
+
+.two-col { position:relative; zoom:1; }
+.two-col .left { width:49%; float:left; }
+.two-col .right { width:49%; float:right; }
+.clear {clear:both; height:1px; font-size:1px; overflow:hidden; }
+.errorlist { margin:0; padding:0; }
+.errorlist li {list-style:none; }
+
+
+.tan   { border:1px solid #fcecaa; background:#FEF8D8; padding:15px; margin-bottom:10px; min-height:5em; }
+.tan form { padding:0; text-align:center;}
+.tan form td { text-align:left; }
+.tan form th {padding-left:0; }
+
+
+#MarqueeHelp{}
+#MarqueeHelp p{}
+#MarqueeHelp ul { margin-left:0; padding-left:2em;  }
+#MarqueeHelp ul li{ margin: .5em 0;}
+#MarqueeHelp li li { list-style-type:circle; }
+
+#SubmissionForm label{font-family: "Georiga", "serif"; font-size: 14px;}
+
+/******************************************************************************\
+    Specific Blocks
+\******************************************************************************/
+#preview {}
+#preview p {width: 128px;}
+#preview img { margin: .5em 0;}
+
+
+/******************************************************************************\
+    Google Things
+\******************************************************************************/
+.info-window { width:300px; overflow-x:hidden; margin:0; }
+.info-window h2 {margin:0; padding-bottom:10px; font-size:1.5em; }
+.info-window p {text-align:right; padding-top:7px; margin:0; }
+
+
+/******************************************************************************\
+    Blueprint Fixes / UI tweaks
+\******************************************************************************/
+.ui-datepicker { font-size: 78.1% }
+.ui-dialog .ui-dialog-buttonpane button { padding:0; }
+.ui-state-error { background-image:url(img/ui-bg-red-diagonals.png); color:red;}
+.ui-state-highlight { border-color:#004276; color:#001D39; background:#F4FAFF; }
+.ui-state-success { background:#F0FFE3; border:1px solid #97D369; color:#142305; }
+.ui-state-success .ui-icon { background-image:url(img/ui-icons.png); }
+.ui-widget p { margin:0; padding:1em; }
+.ui-icon { margin-top:2px; float:left; margin-right:.3em; }
+.success .ui-icon {background-image:url(img/ui-icons.png); }
+.highlight { border:1px solid #004276; color:#001D39; background:#F4FAFF; display:block; padding:.2em; margin:.2em 0; }
+#UCFHBHeader select { margin:0; padding:0; }
+#UCFHBHeader input.text { margin:0; padding:0; }
+a.ui-button .ui-button-text { line-height:1.3; }
+input[value=Next] { margin-top:1em; }
+

@@ -1,0 +1,31 @@
+{% extends 'admin/change_form.html' %}
+
+
+{% block extrahead %}
+{{ block.super }}
+<script type="text/javascript" src="{{MEDIA_URL}}js/jquery-ui-1.8.2.custom/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="{{MEDIA_URL}}js/plugins/colorpicker/js/colorpicker.js"></script>
+<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}js/plugins/colorpicker/css/colorpicker.css" media="all">
+<script type="text/javascript" src="{{MEDIA_URL}}js/admin.js"></script>
+{% endblock %}
+
+
+{% block content %}
+<div class="two-col" id="slide">
+	<div class="left">
+		{{ block.super }}
+	</div>
+	<div class="right">
+		<div id="preview" src="{%url image%}">
+			<h2>Image Preview</h2>
+			<img id="image-preview" src="{%url image %}?text={{original.text|default:'Image Preview'|urlencode}}&amp;fg={{original.color_font|default:'EBB700'}}&amp;bg={{original.color_bg|default:'000000'}}&amp;font={{original.font|default:'Gotham'}}">
+			<div style="width:128px; padding:1em 0 .5em; text-align:center;">
+				<a class="button" id="image-download" href="{%url image %}?text={{original.text|default:'Image Preview'|urlencode}}&amp;fg={{original.color_font|default:'EBB700'}}&amp;bg={{original.color_bg|default:'000000'}}&amp;font={{original.font|default:'Gotham'}}&amp;download=true">
+					download
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+{% endblock %}

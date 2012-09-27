@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | Marquee Mark Admin{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">Marquee Mark</h1>
+<a href="{% url home %}">view live form</a>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}/style/admin.css" media="all">
+{% endblock %}

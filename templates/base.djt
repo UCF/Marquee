@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="robots" content="none, noindex, nofollow, noarchive">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>UCF Marquee</title>
+		<!-- UCF Header and Stylesheets -->
+		<link href="https://universityheader.ucf.edu/bar/css/bar.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://universityheader.ucf.edu/bar/js/university-header.js"></script>
+		<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}style/global.css">
+		<!-- blueprint css -->
+		<link rel="stylesheet" href="{{MEDIA_URL}}style/blueprint/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="{{MEDIA_URL}}style/blueprint/print.css" type="text/css" media="print">
+		<!--[if lt IE 8]><link rel="stylesheet" href="{{MEDIA_URL}}style/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+		<!-- jquery + UI -->
+		<link type="text/css" href="{{MEDIA_URL}}js/jquery-ui-1.8.2.custom/css/ui-lightness/jquery-ui-1.8.2.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="{{MEDIA_URL}}js/jquery-ui-1.8.2.custom/js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="{{MEDIA_URL}}js/jquery-ui-1.8.2.custom/js/jquery-ui-1.8.2.custom.min.js"></script>
+		<script type="text/javascript" src="{{MEDIA_URL}}js/jquery.plugins/timepicker.js"></script>
+		<!-- UCF Web Communications -->
+		<script type="text/javascript" src="{{MEDIA_URL}}js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}style/screen.css?date={{date}}" media="screen">
+		{% block script %}{% endblock %}
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6464593-20']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = (
+					'https:' == document.location.protocol ? 'https://ssl' : 'http://www'
+				) + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="wrap">{%block wrap%}{%endblock wrap%}</div>
+
+		<!-- FOOTER -->
+		<div id="footer">
+			<p><a id="ucf_logo" href="http://www.ucf.edu/">UCF Stands For Opportunity</a></p>
+		</div>
+		<!-- END FOOTER -->
+	
+		{% block footer %}{% endblock %}
+	</body>
+</html>
