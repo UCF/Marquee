@@ -2,5 +2,4 @@
 *.sqlite
 *.pyc
 ._*
-settings.py
 db/
