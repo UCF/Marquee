@@ -59,4 +59,11 @@ With wsgi installed and running, you need to setup the virtual host configuratio
 
 Once apache is installed and configured properly, prepare the application itself.  Copy settings\_local.templ.py to settings\_local.py.  Make changes to that file as needed, most configuration settings are self explanatory.  Once the file is configured as needed, restart apache.  If all went well, your vhost should bring up the public form.
 
+The settings.py file needs to be updated to include the Django admin templates using TEMPLATE_DIRS. Below is an example to include the admin templates after the custom templates.
+TEMPLATE_DIRS = (
+	TEMPL_FOLDER,
+	'/usr/local/lib/python2.6/dist-packages/django/contrib/admin/templates'
+	)
+
+
 The only section which might need more explanation is the Active Directory section toward the end.  It is by default commented out, but when uncommented the settings there will be used to attempt to authenticate users against LDAP.

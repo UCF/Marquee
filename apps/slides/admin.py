@@ -37,4 +37,6 @@ class SlideAdmin(admin.ModelAdmin):
 		'status')
 	readonly_fields = ('created',)
 
+	ordering = ['-created']
+
 admin.site.register(Slide, SlideAdmin)

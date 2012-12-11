@@ -18,7 +18,7 @@ class Slide(models.Model):
 	)
 	created		  = models.DateTimeField(default=datetime.now())
 	text		  = models.TextField("Enter Event Info (as it should appear on marquee):", default="Text to display")
-	font		  = models.CharField(default='Gotham', max_length='255', choices=fonts_tuple())
+	font		  = models.CharField(default='Gotham_XNarrow_Medium', max_length='255', choices=fonts_tuple())
 	font_size     = models.IntegerField("Font Size", default=16, choices=FONTSIZES)
 	color_bg	  = models.CharField("Background Color", max_length="6", default="000000")
 	color_font	  = models.CharField("Font Color", max_length="6", default="EBB700")
