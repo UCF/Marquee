@@ -53,7 +53,7 @@ def image(request):
 	fg         000                fff                          Color of text
 	bg         111                000                          Color of background
 	size       24                 16                           Font size
-	font       Arial.ttf          Gotham_XNarrow_Medium.ttf    Font face for rendered text
+	font       Arial.ttf          Gotham.ttf                   Font face for rendered text
 	padding    10                 5                            Padding around text
 	width      300                96                           Width of rendered image
 	height     300                128                          Height of rendered image
@@ -63,7 +63,7 @@ def image(request):
 	text	   = request.GET.get('text', '')
 	color	   = '#' + request.GET.get('fg', 'fff')
 	size	   = int(request.GET.get('size', 16))
-	font	   = request.GET.get('font', 'Gotham_XNarrow_Medium.ttf')
+	font	   = request.GET.get('font', 'Gotham.ttf')
 	format	   = request.GET.get('format', 'png').lower()
 	download   = True if request.GET.get('download', False) else False
 	mimetype   = {
