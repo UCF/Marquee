@@ -8,6 +8,8 @@ INC_FOLDER        = os.path.join(PROJECT_FOLDER, 'third-party')
 TEMPL_FOLDER      = os.path.join(PROJECT_FOLDER, 'templates')
 ROOT_URLCONF      = os.path.basename(PROJECT_FOLDER) + '.urls'
 MEDIA_ROOT        = os.path.join(PROJECT_FOLDER, 'static')
+STATIC_ROOT       = MEDIA_ROOT
+STATIC_URL        = '/static/'
 
 TIME_ZONE         = 'America/New_York'
 LANGUAGE_CODE     = 'en-us'
@@ -17,6 +19,7 @@ USE_I18N          = False
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
 	'django.template.loaders.filesystem.Loader',
+	'django.template.loaders.app_directories.Loader',
 )
 
 

@@ -4,9 +4,9 @@ This tool provides an interface for submitting and managing marquee slides.  Use
 
 ## Requirements ##
 
- * Python >= 2.6
- * Django >= 1.1
- * PIL (Python Imaging Library) >= 1.1.6
+ * Python >= 2.7
+ * Django >= 1.4
+ * PIL (Python Imaging Library) >= 1.1.6 (windows) or Pillow 1.7.8 (*nix)
 
 ## Installation ##
 

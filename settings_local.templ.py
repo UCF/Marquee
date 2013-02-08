@@ -13,7 +13,7 @@ MEDIA_URL = '/static/'
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'thisisasecretsecretsecretsecretkey'
@@ -51,6 +51,17 @@ Additional   : %s
 
 You may preview or edit the submission by visiting http://%s
 """
+
+DATABASES = {
+	'default': {
+		'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+		'NAME': 'marquee.sqlite3.db',                      # Or path to database file if using sqlite3.
+		'USER': '',                      # Not used with sqlite3.
+		'PASSWORD': '',                  # Not used with sqlite3.
+		'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+		'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+	}
+}
 
 DATABASE_ENGINE   = 'sqlite3'
 DATABASE_NAME     = 'data/marquee.sqlite3.db'

@@ -7,7 +7,29 @@ admin.autodiscover()
 from django.contrib.sites.models import Site
 admin.site.unregister(Site)
 
-urlpatterns = patterns('',
+urlpatterns = []
+
+if settings.DEBUG or settings.SERVE_STATIC_FILES:
+	urlpatterns = patterns('',
+		(r'^%s(?P<path>.*)$' % settings.MEDIA_URL[1:],
+			'django.views.static.serve',
+			{
+				'document_root': settings.MEDIA_ROOT,
+				'show_indexes' : True,
+			}
+		),
+	)
+	urlpatterns += patterns('',
+			(r'^admin/admin/(?P<path>.*)$',
+				'django.views.static.serve',
+				{
+					'document_root': 'static/admin',
+					'show_indexes' : True,
+				}
+		),
+	)
+
+urlpatterns += patterns('',
 	url(r'^$', 'slides.views.home', name="home"),
 	url(r'^image/$', 'slides.views.image', name="image"),
 	#(r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
