@@ -30,7 +30,7 @@ def text_to_image(
 	Background can either be a path to an image or a dictionary describing the
 	dimensions and color of a background."""
 	
-	import Image, ImageFont
+	from PIL import Image, ImageFont
 	font = os.path.join(FONT_DIR, font)
 	try:
 		font = ImageFont.truetype(font, size)
@@ -85,7 +85,7 @@ def writelines(lines, image):
 	"""Writes lines to image provided with the specified font and color.
 	Currently automatically centers both horizontally and vertically.  At the
 	moment there is no way to customize this."""
-	import ImageDraw
+	from PIL import ImageDraw
 	if len(lines) < 1: return image
 
 	font         = image.font

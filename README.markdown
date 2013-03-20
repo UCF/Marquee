@@ -6,11 +6,13 @@ This tool provides an interface for submitting and managing marquee slides.  Use
 
  * Python >= 2.7
  * Django >= 1.4
- * PIL (Python Imaging Library) >= 1.1.6 (windows) or Pillow 1.7.8 (*nix)
+ * PIL (Python Imaging Library) >= 1.1.7 (*nix) or Pillow 2.0.0 (windows http://www.lfd.uci.edu/~gohlke/pythonlibs/#pil)
 
 ## Installation ##
 
 Django applications can be installed on many different types of systems.  One of the most common is using the Apache HTTP Server and the wsgi module.  For more information on other installation types, please visit the django documentation covering installation, http://docs.djangoproject.com/en/1.2/howto/deployment/.
+
+If installing this project on a *nix system please ensure the imports are correct in the apps/slides/views.py file. Pillow and PIL libraries have different import locations.
 
 ### Apache and WSGI ###
 
