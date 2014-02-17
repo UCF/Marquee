@@ -28,6 +28,7 @@ $(document).ready(function(){
 			
 		}, delay);
 	}
+	update_preview(0);
 	$('#id_text').keyup(function(){update_preview(750);});
 	$('#id_font').change(function(){update_preview(0);});
 	$('#id_font_size').change(function(){update_preview(0);});
