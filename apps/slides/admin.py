@@ -13,7 +13,6 @@ class SlideAdminForm(forms.ModelForm):
 class SlideAdmin(admin.ModelAdmin):
 	list_display = ('created', 'org', 'text', 'display_start', 'status',)
 	search_fields = ['org', 'text']
-	actions = None
 	change_form_template = 'admin/slide.djt';
 	form = SlideAdminForm
 	fields = (
