@@ -8,7 +8,7 @@
 /******************************************************************************\
     General Styles
 \******************************************************************************/
-body { font: 100% "Trebuchet MS", sans-serif; text-align:left; }
+body { font: 100% "Gotham SSm A","Gotham SSm B",sans-serif; text-align:left; }
 #wrap { margin:0; padding:0 0 0 50px; width:950px; margin:0 auto;  }
 
 h1,h2 { font-family:georgia, serif; }
@@ -47,7 +47,7 @@ textarea { width:100%; height:80px; margin:0; }
 #MarqueeHelp ul li{ margin: .5em 0;}
 #MarqueeHelp li li { list-style-type:circle; }
 
-#SubmissionForm label{font-family: "Georiga", "serif"; font-size: 14px;}
+#SubmissionForm label{font-family: "Gotham SSm A","Gotham SSm B",sans-serif; font-size: 14px;}
 
 /******************************************************************************\
     Specific Blocks
