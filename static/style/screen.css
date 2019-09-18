@@ -8,7 +8,7 @@
 /******************************************************************************\
     General Styles
 \******************************************************************************/
-body { font: 100% "Gotham SSm A","Gotham SSm B",sans-serif; text-align:left; }
+body { font: 90% "Gotham SSm A","Gotham SSm B",sans-serif; text-align:left; }
 #wrap { margin:0; padding:0 0 0 50px; width:950px; margin:0 auto;  }
 
 h1,h2 { font-family:georgia, serif; }
