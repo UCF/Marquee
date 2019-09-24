@@ -19,9 +19,9 @@ class Slide(models.Model):
 	color_font	  = models.CharField("Font Color", max_length="6", default="EBB700")
 	display_start = models.DateField()
 	display_end	  = models.DateField()
-	event_start	  = models.DateTimeField(null=True)
-	event_end	  = models.DateTimeField(null=True)
-	location	  = models.CharField("Event Location", max_length='255', blank=True)
+	#event_start	  = models.DateTimeField(null=True)
+	#event_end	  = models.DateTimeField(null=True)
+	#location	  = models.CharField("Event Location", max_length='255', blank=True)
 	org			  = models.CharField("Name of UCF Organization / Unit", max_length=255)
 	name		  = models.CharField("Contact Name", max_length=255)
 	phone		  = models.CharField("Phone", max_length=50)
@@ -57,8 +57,8 @@ from django.contrib.localflavor.us.forms import USPhoneNumberField
 class SlideForm(forms.ModelForm):
 	display_start = forms.DateField(label="Display Start Date", input_formats=('%m/%d/%Y',))
 	display_end = forms.DateField(label="Display End Date", input_formats=('%m/%d/%Y',))
-	event_start = forms.DateField(label="Event Start Date/Time", input_formats=('%m/%d/%Y %H:%M %p',),)
-	event_end = forms.DateField(label="Event End Date/Time", input_formats=('%m/%d/%Y %H:%M %p',),)
+	#event_start = forms.DateField(label="Event Start Date/Time", input_formats=('%m/%d/%Y %H:%M %p',),)
+	#event_end = forms.DateField(label="Event End Date/Time", input_formats=('%m/%d/%Y %H:%M %p',),)
 	phone = USPhoneNumberField()
 	class Meta:
 		model = Slide
