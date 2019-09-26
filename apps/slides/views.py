@@ -61,6 +61,7 @@ def image(request):
 	
 	import txt2img, StringIO
 	text	   = request.GET.get('text', '')
+	text2	   = request.GET.get('text2', '')
 	color	   = '#' + request.GET.get('fg', 'fff')
 	size	   = int(request.GET.get('size', 16))
 	font	   = request.GET.get('font', 'Gotham.ttf')
