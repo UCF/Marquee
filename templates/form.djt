@@ -8,34 +8,31 @@
 <div class="span-10">
 
 	<div id="MarqueeHelp">
-		<h3>Submission Guidelines</h3>
+		<h3>Guidelines</h3>
 		<ul>
-			<li>All requests must be submitted at least two weeks before requested date of posting</li>
-			<li>Each message will be allocated only one board on the marquee 
+			<li>All requests must be submitted at least two weeks before requested date of posting.</li>
+			<li>Each message will be allocated only one image on the marquee. 
 				<ul>
-					<li>There will be no “scrolling”</li>
-					<li>Because of the limited space, only vital information relevant to the event should be posted, such as one website and/or phone number</li>
+					<li>There will be no “scrolling”.</li>
+					<li>Because of the limited space, only vital information relevant to the event should be posted, such as date, time and location.</li>
 				</ul>
 			</li>
-			<li>No offensive or inappropriate messages will be posted</li>
-			<li>Messages related to specific workshops, classes, clubs, events, intramural sports or Greek organizations that do not have universitywide interest will not be posted</li>
-			<li>No names will be used in the messages unless directly relevant to the event</li>
-		</ul>
-		<h3>General Guidelines</h3>
-		<ul>
-			<li>In an emergency situation, the marquee will only be used to display emergency messages</li>
-			<li>All messages are subject to editing by University Marketing</li>
-			<li>University Marketing reserves the right to refuse to post any message submitted</li>
+			<li>No offensive or inappropriate messages will be posted.</li>
+			<li>Messages related to specific workshops, classes, clubs, events, intramural sports or Greek organizations that do not have universitywide interest will not be posted.</li>
+			<li>No names will be used in the messages unless directly relevant to the event.</li>
+			<li>In an emergency situation, the marquee will only be used to display emergency messages.</li>
+			<li>All messages are subject to editing by UCF Marketing.</li>
+			<li>UCF Marketing reserves the right to refuse to post any message submitted.</li>
 		</ul>
 		<h3>Priority of Requests</h3>
 		<ul>
-			<li>UCF events of a cultural or intellectual nature that are open campuswide to students, faculty and staff members, and the public, such as speakers, lectures and symposia</li>
-			<li>Academic-related announcements covering a substantial number of students, such as university schedule changes, etc</li>
-			<li>CFE Arena and Knights Plaza events and announcements</li>
-			<li>UCF public service activities such as blood drives and charitable fund raisers</li>
-			<li>Major university events where traffic may be impacted</li>
-			<li>Significant university accomplishments</li> 
-			<li>Due to the volume of marquee requests, not all requests will be honored</li>
+			<li>Cultural, intellectual or athletic events that are open campuswide to students, faculty and staff members, and the public, such as speakers, lectures and symposia.</li>
+			<li>Academic-related announcements covering a substantial number of students, such as university schedule changes, etc.</li>
+			<li>Addition Financial Arena and Knights Plaza events and announcements.</li>
+			<li>UCF public service activities such as blood drives and charitable fundraisers.</li>
+			<li>Major university events where traffic may be impacted.</li>
+			<li>Significant university accomplishments.</li> 
+			<li>Due to the volume of marquee requests, not all requests may be honored.</li>
 		</ul>
 	</div>
 
@@ -53,7 +50,7 @@
 			<input type="submit" value="submit" class="button">
 		</form>
 		</div>
-		<p>For more information and questions, send an e-mail to <a href="mailto:marquee@ucf.edu">marquee&#64;ucf.edu.</a></p>
+		<p>For more information and to ask questions, send an email to <a href="mailto:marquee@ucf.edu">marquee&#64;ucf.edu.</a></p>
 	</div>
 	<div class="span-4 last">
 

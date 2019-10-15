@@ -8,16 +8,16 @@
 /******************************************************************************\
     General Styles
 \******************************************************************************/
-body { font: 80% "Trebuchet MS", sans-serif; text-align:left; }
+body { font: 90% "Gotham SSm A","Gotham SSm B",sans-serif; text-align:left; }
 #wrap { margin:0; padding:0 0 0 50px; width:950px; margin:0 auto;  }
 
-h1,h2 { font-family:georgia, serif; }
+h1,h2 { font-family:"Gotham SSm A","Gotham SSm B",sans-serif; }
 h1 { margin:.8em 0; }
 h1 span {font-size:10px; color:white; }
 h1 a {text-decoration:none; color:black; }
 h1 a:hover {color:black; }
 h2 { margin-top: 0em;}
-h3 { font-size:1.3em; }
+h3 { font-size:1.3em; font-weight:bold; }
 a { color:#990000; }
 a:hover { cursor:pointer; color:#C30202; }
 .hide {display:none; }
@@ -47,7 +47,7 @@ textarea { width:100%; height:80px; margin:0; }
 #MarqueeHelp ul li{ margin: .5em 0;}
 #MarqueeHelp li li { list-style-type:circle; }
 
-#SubmissionForm label{font-family: "Georiga", "serif"; font-size: 14px;}
+#SubmissionForm label{font-family: "Gotham SSm A","Gotham SSm B",sans-serif; font-size: 14px;}
 
 /******************************************************************************\
     Specific Blocks

@@ -5,7 +5,7 @@ from django.contrib import admin
 from widgets import SlideSchemeWidget
 
 class SlideAdminForm(forms.ModelForm):
-	slide_scheme = forms.CharField(widget=SlideSchemeWidget(), required=False)	  
+	slide_scheme = forms.CharField(widget=SlideSchemeWidget(), required=False)
 	class Meta:
 		model = Slide
 
@@ -17,21 +17,21 @@ class SlideAdmin(admin.ModelAdmin):
 	form = SlideAdminForm
 	fields = (
 		'created',
-		'text', 
-		'slide_scheme', 
-		'color_bg', 
-		'color_font', 
-		'font', 
+		'text',
+		'slide_scheme',
+		'color_bg',
+		'color_font',
+		'font',
 		'font_size',
 		'display_start',
 		'display_end',
-		'location',
+		#'location',
 		'org',
 		'name',
 		'phone',
 		'email',
-		'event_end',
-		'event_start',
+		#'event_end',
+		#'event_start',
 		'additional',
 		'status')
 	readonly_fields = ('created',)

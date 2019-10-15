@@ -256,9 +256,9 @@ a img {
 }
 #footer a#ucf_logo {
 	display: block;
-	height: 43px;
-	width: 256px;
+	height:100px;
+	width: 356px;
 	text-indent: -9000px;
-	background:url(img/ucf_stands_for_opportunity.png) no-repeat;
-	margin: 25px auto;
+	background:url(img/ucf_logo.png) no-repeat;
+	margin: 5px auto;
 }
