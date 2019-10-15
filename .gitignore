@@ -6,3 +6,4 @@ settings_local.py
 *.pyc
 ._*
 db/
+apache/python.wsgi
