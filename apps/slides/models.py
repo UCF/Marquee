@@ -9,7 +9,7 @@ class Slide(models.Model):
 	)
 	FONTSIZES     = (
 	    (16, '16 px'),
-	    (18, '18 px')
+	  #  (18, '18 px')
 	)
 	created		  = models.DateTimeField(default=datetime.now())
 	text		  = models.TextField("Enter Event Info (as it should appear on marquee):", default="Event\nDate\nTime\nLocation")
@@ -19,7 +19,7 @@ class Slide(models.Model):
 	color_font	  = models.CharField("Font Color", max_length="6", default="EBB700")
 	display_start = models.DateField()
 	display_end	  = models.DateField()
-	#event_start	  = models.DateTimeField(null=True)
+	#event_start  = models.DateTimeField(null=True)
 	#event_end	  = models.DateTimeField(null=True)
 	#location	  = models.CharField("Event Location", max_length='255', blank=True)
 	org			  = models.CharField("Name of UCF Organization / Unit", max_length=255)
