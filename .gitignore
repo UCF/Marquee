@@ -6,3 +6,7 @@ settings_local.py
 *.pyc
 ._*
 db/
+<<<<<<< Updated upstream
+=======
+apache/python.wsgi
+>>>>>>> Stashed changes
