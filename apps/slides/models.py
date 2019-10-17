@@ -9,7 +9,12 @@ class Slide(models.Model):
 	)
 	FONTSIZES     = (
 	    (16, '16 px'),
-	  #  (18, '18 px')
+	    (18, '18 px'),
+	    (20, '20 px'),
+	    (22, '22 px'),
+	    (24, '24 px'),
+	    (26, '26 px'),
+	    (28, '28 px'),
 	)
 	created		  = models.DateTimeField(default=datetime.now())
 	text		  = models.TextField("Enter Event Info (as it should appear on marquee):", default="Event\nDate\nTime\nLocation")
@@ -26,7 +31,7 @@ class Slide(models.Model):
 	name		  = models.CharField("Contact Name", max_length=255)
 	phone		  = models.CharField("Phone", max_length=50)
 	email		  = models.EmailField()
-	additional	  = models.TextField(blank=True)
+	additional	  = models.TextField("Additional Information", blank=True)
 	status		  = models.CharField(default='Pending', max_length='16', choices=STATUS)
 
 	@property
@@ -63,3 +68,7 @@ class SlideForm(forms.ModelForm):
 	class Meta:
 		model = Slide
 		exclude = ('status','created', 'font', 'color_bg', 'color_font')
+		widgets = {
+				"font_size": forms.HiddenInput()
+		}
+	
