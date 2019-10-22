@@ -25,13 +25,10 @@ class SlideAdmin(admin.ModelAdmin):
 		'font_size',
 		'display_start',
 		'display_end',
-		#'location',
 		'org',
 		'name',
 		'phone',
 		'email',
-		#'event_end',
-		#'event_start',
 		'additional',
 		'status')
 	readonly_fields = ('created',)
