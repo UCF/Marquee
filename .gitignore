@@ -3,7 +3,7 @@ settings_local.py
 *.db
 *.sqlite3
 *.sqlite
-*.pyc
+**.pyc
 ._*
 db/
 apache/python.wsgi

@@ -50,6 +50,7 @@ INSTALLED_APPS = (
 	'django.contrib.sites',
 	'django.contrib.messages',
 	'slides',
+    'south'
 )
 
 try:
@@ -60,4 +61,3 @@ except ImportError:
 		'Local settings file was not found. ' +
 		'Ensure settings_local.py exists in project root.'
 	)
-	
