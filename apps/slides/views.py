@@ -4,16 +4,16 @@ import settings
 
 def render_to_response(request, template, dictionary={}, mimetype=None):
 	""" Wrapper for django.shortcuts.render_to_response to auto populate
-	RequestContext as context_instance argument.""" 
+	RequestContext as context_instance argument."""
 	from django.shortcuts import render_to_response as _render_to_response
 	from django.template  import RequestContext
-	
-	context_instance = RequestContext(request, dictionary)	
+
+	context_instance = RequestContext(request, dictionary)
 	return _render_to_response(template, context_instance, mimetype)
 
 def home(request):
 	from slides.models import Slide, SlideForm
-   
+
 	template = 'form.djt'
 	if request.method == 'POST':
 		form = SlideForm(request.POST)
@@ -23,9 +23,6 @@ def home(request):
 				settings.EMAIL_SUBJECT % (slide.name,),
 				settings.EMAIL_MESSAGE % (
 					slide.text,
-					slide.event_start,
-					slide.event_end,
-					slide.location,
 					slide.name,
 					slide.org,
 					slide.phone,
@@ -45,9 +42,9 @@ def home(request):
 
 def image(request):
 	""" Generates an image based on the GET parameters passed.
-	
+
 	Available GET Params:
-	
+
 	Name       Example            Default                      Description
 	text       Some text          (empty)                      Text to render
 	fg         000                fff                          Color of text
@@ -58,7 +55,7 @@ def image(request):
 	width      300                96                           Width of rendered image
 	height     300                128                          Height of rendered image
 	format     JPEG               PNG                          Format of created image """
-	
+
 	import txt2img, StringIO
 	text	   = request.GET.get('text', '')
 	color	   = '#' + request.GET.get('fg', 'fff')
@@ -91,4 +88,3 @@ def image(request):
 	if download:
 		response['content-disposition'] = "attachment; filename=marquee_slide." + format
 	return response
-	
