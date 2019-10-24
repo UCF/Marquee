@@ -37,9 +37,6 @@ EMAIL_MESSAGE       = """The following slide was recently submitted:
 
 --Event Information--
 Text / Name  : %s
-Start Date   : %s
-End Date     : %s
-Location     : %s
 
 --Contact Information--
 Contact Name : %s
@@ -71,8 +68,8 @@ DATABASE_USER     = ''
 DATABASE_PASSWORD = ''
 
 ### ACTIVE DIRECTORY SETTINGS
-# AD_DNS_NAME should set to the AD DNS name of the domain (ie; example.com)  
-# If you are not using the AD server as your DNS, it can also be set to 
+# AD_DNS_NAME should set to the AD DNS name of the domain (ie; example.com)
+# If you are not using the AD server as your DNS, it can also be set to
 # FQDN or IP of the AD server.
 '''
 AUTHENTICATION_BACKENDS = ('auth.ActiveDirectoryBackend',)
