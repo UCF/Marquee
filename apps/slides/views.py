@@ -20,8 +20,8 @@ def home(request):
 		if form.is_valid():
 			slide = form.save()
 			send_mail(
-				settings.EMAIL_SUBJECT % (slide.name,),
-				settings.EMAIL_MESSAGE % (
+				settings.EMAIL_SUBJECT.format(slide.name),
+				settings.EMAIL_MESSAGE.format(
 					slide.text,
 					slide.name,
 					slide.org,

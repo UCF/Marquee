@@ -32,21 +32,21 @@ else:
 #Configurables for slide submission email notification
 EMAIL_FROM          = 'noreply@mail.ucf.edu'
 EMAIL_MARQUEE       = ['marquee@mail.ucf.edu',]
-EMAIL_SUBJECT       = "A New Marquee Request has been submitted by %s"
+EMAIL_SUBJECT       = "A New Marquee Request has been submitted by {0}"
 EMAIL_MESSAGE       = """The following slide was recently submitted:
 
 --Event Information--
-Text / Name  : %s
+Text / Name  : {0}
 
 --Contact Information--
-Contact Name : %s
-Organization : %s
-Phone        : %s
-Email        : %s
-Additional   : %s
+Contact Name : {1}
+Organization : {2}
+Phone        : {3}
+Email        : {4}
+Additional   : {5}
 
 
-You may preview or edit the submission by visiting http://%s
+You may preview or edit the submission by visiting http://{6}
 """
 
 DATABASES = {
