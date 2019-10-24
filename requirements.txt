@@ -1,7 +1,4 @@
 Django==1.4.16
 MySQL-python==1.2.5
-<<<<<<< HEAD
 Pillow==2.0.0
-=======
 South==1.0.2
->>>>>>> rc-v2.0.2
