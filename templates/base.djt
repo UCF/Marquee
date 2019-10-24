@@ -46,7 +46,7 @@
 			<p><a id="ucf_logo" href="https://www.ucf.edu/">University of Central Florida</a></p>
 		</div>
 		<!-- END FOOTER -->
-	
+
 		{% block footer %}{% endblock %}
 	</body>
 </html>
