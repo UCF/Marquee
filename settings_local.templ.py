@@ -32,24 +32,21 @@ else:
 #Configurables for slide submission email notification
 EMAIL_FROM          = 'noreply@mail.ucf.edu'
 EMAIL_MARQUEE       = ['marquee@mail.ucf.edu',]
-EMAIL_SUBJECT       = "A New Marquee Request has been submitted by %s"
+EMAIL_SUBJECT       = "A New Marquee Request has been submitted by {0}"
 EMAIL_MESSAGE       = """The following slide was recently submitted:
 
 --Event Information--
-Text / Name  : %s
-Start Date   : %s
-End Date     : %s
-Location     : %s
+Text / Name  : {0}
 
 --Contact Information--
-Contact Name : %s
-Organization : %s
-Phone        : %s
-Email        : %s
-Additional   : %s
+Contact Name : {1}
+Organization : {2}
+Phone        : {3}
+Email        : {4}
+Additional   : {5}
 
 
-You may preview or edit the submission by visiting http://%s
+You may preview or edit the submission by visiting http://{6}
 """
 
 DATABASES = {
@@ -71,8 +68,8 @@ DATABASE_USER     = ''
 DATABASE_PASSWORD = ''
 
 ### ACTIVE DIRECTORY SETTINGS
-# AD_DNS_NAME should set to the AD DNS name of the domain (ie; example.com)  
-# If you are not using the AD server as your DNS, it can also be set to 
+# AD_DNS_NAME should set to the AD DNS name of the domain (ie; example.com)
+# If you are not using the AD server as your DNS, it can also be set to
 # FQDN or IP of the AD server.
 '''
 AUTHENTICATION_BACKENDS = ('auth.ActiveDirectoryBackend',)
