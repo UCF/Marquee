@@ -12,8 +12,8 @@
   font-family: "UCF Sans Serif Alt";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.ucf.edu/athena-framework/latest/fonts/ucf-sans-serif-alt/ucfsansserifalt-light-webfont.woff2"),
-       url("https://cdn.ucf.edu/athena-framework/latest/fonts/ucf-sans-serif-alt/ucfsansserifalt-light-webfont.woff");
+  src: url("https://cdn.ucf.edu/athena-framework/latest/fonts/ucf-sans-serif-alt/ucfsansserifalt-medium-webfont.woff2"),
+       url("https://cdn.ucf.edu/athena-framework/latest/fonts/ucf-sans-serif-alt/ucfsansserifalt-medium-webfont.woff");
 }
 
 /* Sans-serif - Bold */
