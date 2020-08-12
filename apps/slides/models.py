@@ -55,7 +55,7 @@ class Slide(models.Model):
 
 # front-end form
 from django import forms
-from django.contrib.localflavor.us.forms import USPhoneNumberField
+from localflavor.us.forms import USPhoneNumberField
 class SlideForm(forms.ModelForm):
 	display_start = forms.DateField(label="Display Start Date", input_formats=('%m/%d/%Y',))
 	display_end = forms.DateField(label="Display End Date", input_formats=('%m/%d/%Y',))
@@ -66,4 +66,3 @@ class SlideForm(forms.ModelForm):
 		widgets = {
 				"font_size": forms.HiddenInput()
 		}
-	
