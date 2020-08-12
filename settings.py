@@ -39,6 +39,8 @@ MIDDLEWARE_CLASSES = (
 
 TEMPLATE_DIRS = (TEMPL_FOLDER,)
 
+WSGI_APPLICATION = 'wsgi.application'
+
 # Add local apps folder to python path
 sys.path.append(APP_FOLDER)
 sys.path.append(INC_FOLDER)
