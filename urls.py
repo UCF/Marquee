@@ -1,5 +1,5 @@
 from django.conf.urls import *
-from django.views.generic.simple import direct_to_template
+from django.views.generic import TemplateView
 import settings
 
 from django.contrib import admin
@@ -35,7 +35,7 @@ urlpatterns += patterns('',
 	#(r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
 	#(r'^logout/$', 'django.contrib.auth.views.logout_then_login'),
 
-	(r'^robots.txt$', direct_to_template, {'template':'robots.txt', 'mimetype':'text/plain'}),
+	(r'^robots.txt$', TemplateView.as_view(template_name='robots.txt', content_type='text/plain'),
 
 	(r'^admin/', include(admin.site.urls)),
 
