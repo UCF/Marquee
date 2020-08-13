@@ -16,11 +16,11 @@
 		{{ block.super }}
 	</div>
 	<div class="right">
-		<div id="preview" src="{%url 'image'%}">
+		<div id="preview" src="{%url image%}">
 			<h2>Image Preview</h2>
-			<img id="image-preview" src="{%url 'image' %}?text={{original.text|default:'Image Preview'|urlencode}}&amp;fg={{original.color_font|default:'EBB700'}}&amp;bg={{original.color_bg|default:'000000'}}&amp;font={{original.font|default:'Gotham'}}">
+			<img id="image-preview" src="{%url image %}?text={{original.text|default:'Image Preview'|urlencode}}&amp;fg={{original.color_font|default:'EBB700'}}&amp;bg={{original.color_bg|default:'000000'}}&amp;font={{original.font|default:'Gotham'}}">
 			<div style="width:128px; padding:1em 0 .5em; text-align:center;">
-				<a class="button" id="image-download" href="{%url 'image' %}?text={{original.text|default:'Image Preview'|urlencode}}&amp;fg={{original.color_font|default:'EBB700'}}&amp;bg={{original.color_bg|default:'000000'}}&amp;font={{original.font|default:'Gotham'}}&amp;download=true">
+				<a class="button" id="image-download" href="{%url image %}?text={{original.text|default:'Image Preview'|urlencode}}&amp;fg={{original.color_font|default:'EBB700'}}&amp;bg={{original.color_bg|default:'000000'}}&amp;font={{original.font|default:'Gotham'}}&amp;download=true">
 					download
 				</a>
 			</div>

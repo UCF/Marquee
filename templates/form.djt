@@ -11,7 +11,7 @@
 		<h3>Guidelines</h3>
 		<ul>
 			<li>All requests must be submitted at least two weeks before requested date of posting.</li>
-			<li>Each event will be allocated only one image on the marquee.
+			<li>Each event will be allocated only one image on the marquee. 
 				<ul>
 					<li>There will be no “scrolling.”</li>
 					<li>Because of the limited space, only vital information relevant to the event should be posted, such as date, time and location.</li>
@@ -30,16 +30,16 @@
 			<li>Addition Financial Arena and Knights Plaza events and announcements.</li>
 			<li>UCF public service activities such as blood drives and charitable fundraisers.</li>
 			<li>Major university events where traffic may be impacted.</li>
-			<li>Significant university accomplishments.</li>
+			<li>Significant university accomplishments.</li> 
 			<li>Due to the volume of marquee requests, not all requests may be honored.</li>
 		</ul>
 	</div>
 
 </div>
 <div class="span-14 last">
-
+	
 	<h3>Request Form</h3>
-
+	
 	<div class="span-10">
 		<div class="ui-corner-all tan">
 		<form method="post" action="" id="SubmissionForm">
@@ -53,11 +53,11 @@
 	</div>
 	<div class="span-4 last">
 
-		<div id="preview" src="{%url 'image' %}" class="spin">
-			<img id="ImagePreview" src="{%url 'image' %}" />
+		<div id="preview" src="{%url image %}" class="spin">
+			<img id="ImagePreview" src="{%url image %}" />
 			<p>This preview should be used to estimate how much text may fit on the image.</p>
 		</div>
 	</div>
-
+	
 </div>
 {% endblock wrap %}
